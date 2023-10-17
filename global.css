@@ -5,10 +5,9 @@
 
 html {
     background-color: grey;
-    background-image: url(data/fond.png);
+    background-image:  url(data/fondBar.svg), url(data/fond.svg);
     height: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-attachment: scroll, fixed;
     background-size: cover;
   }
 
@@ -26,17 +25,20 @@ nav ul {
 }
 
 nav le {
+    font-family: 'Exo 2', sans-serif;
     float : left;
     width: 10%;
     text-align: center;
 }
 
 nav ce {
+    font-family: 'Exo 2', sans-serif;
     width: 10%;
     text-align: center;
 }
 
 nav ri {
+    font-family: 'Exo 2', sans-serif;
     float : right;
     width: 10%;
     text-align: center;
@@ -51,8 +53,7 @@ nav ul::after {
 nav {
     width: 100%;
     margin: 0 0;
-    background-color: white;
-    position: sticky;
+    position: static ;
     top: 0px;
 }
 
