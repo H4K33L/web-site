@@ -1,56 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang = "fr">
 
 <head>
 <meta charset = "utf-8" />
 <title> Assistant de création de personnage pour jeu de rôle (JdR) </title>
-<link rel = "stylesheet" href = "global.css">
+<link rel = "stylesheet" href = "style/global.css">
 </head>
 
 <body>
 
 <nav>
     <ul>
-        <ri> <li> <A href="index.html"> Contacts </A> </li> </ri>
+        <ri> <li> <A href="contact.html"> Contacts </A> </li> </ri>
         <le> <li> <A href="index.html"> Page d'acceuil </A> </li> </le>
-        <ce> <li> <A href="index.html"> Projets </A> </li> </ce>
+        <ce> <li> <A href="projet.html"> Projets </A> </li> </ce>
     </ul>
 </nav>
 
 <main>
-    <br/>
-    <br/>
+<br/>
+<h1> Assistant de création de personnage pour jeu de rôle (JdR) : <img  width = 5% height = 5% src="data/icon.png"/></h1>
+</main>
 
-    <h1> Assistant de création de personnage pour jeu de rôle (JdR) : </h1>
+<br/>
 
-    <br/>
-    
-    <h3>
-    J'ai commencé à développer ce projet en utilisant Python, le projet demandant de traiter des informations et de leur donner une nouvelle forme.
-    <br/>Mais seulement traiter les données n'est pas suffisant, il fallait aussi une interface utilisateur pour faciliter les interactions, j'ai donc utilisé la 
-    <br/>bibliothèque Tkinter de Python pour faire mon interface utilisateur.
-    </h3>
-    
-    <video width = 50% height = 50% controls>
-        <source src="data/videoACPJDR.mp4" type=video/mp4>
-    </video>
-    
-    <h3>
-    Je me sers d'un fichier CSV pour stocker les données du jeu de rôle. La structure respecte un format particulier pour pouvoir 
-    <br/>être prise en compte par le programme et ainsi prendre sa forme finale en tant que fichier texte (TXT). 
-    <br/>Dans ce fichier texte, on retrouvera toutes les informations nécessaires à la création de notre personnage.
-    </h3>
-    
-    <h2> Ambition et l'évolution future du projet : </h2>
-    
-    <h3>
-    Pour l'instant le code est lourd et très peu pratique, l'objectif à long terme est de faire en sorte que l'interface utilisateur 
-    <br/>soit générée en fonction du CSV. Pour faire simple, un personnage de JdR est formé de plusieurs choix déterminants : Classe, histoire étendue, etc. 
-    <br/>et ces choix principaux seront détectés par le code en regardant le CSV. Le code, par la suite, formera l'interface utilisateur de la manière 
-    <br/>la plus optimisée. Ce qui permettra deux choses : la première est de rendre le code moins lourd en évitant d'implémenter tous les boutons. 
-    <br/>Bien évidemment, je suis en train de travailler sur cette deuxième version, qui devrait aboutir sous peu.
-    </h3>
+<section>
+<div class="box">
+    <main>
+        <h3>
+        J'ai commencé à développer ce projet en utilisant Python, le projet demandant de traiter des informations et de leur donner une nouvelle forme.
+        Mais seulement traiter les données n'est pas suffisant, il fallait aussi une interface utilisateur pour faciliter les interactions, j'ai donc utilisé la 
+        bibliothèque Tkinter de Python pour faire mon interface utilisateur.
+        </h3>
     </main>
+</div>
+
+<div class="box">
+    <main>   
+        <h3>
+        Je me sers d'un fichier CSV pour stocker les données du jeu de rôle. La structure respecte un format particulier pour pouvoir 
+        être prise en compte par le programme et ainsi prendre sa forme finale en tant que fichier texte (TXT). 
+        Dans ce fichier texte, on retrouvera toutes les informations nécessaires à la création de notre personnage.
+        </h3>
+    </main>
+</div>
+</section>
+
+<br/>
+    <main>
+        <video width = 50% height = 50% controls>
+            <source src="data/videoACPJDR.mp4" type=video/mp4>
+        </video>
+    </main>
+
+    <br/>
+
+<br/>
+
+<main>
+    <h2> Ambition et l'évolution future du projet : </h2>
+</main>
+
+<br/>
+
+<section>
+<div class="box">
+    <main>    
+        <h3>
+        Pour l'instant le code est lourd et très peu pratique, l'objectif à long terme est de faire en sorte que l'interface utilisateur 
+        soit générée en fonction du CSV. Pour faire simple, un personnage de JdR est formé de plusieurs choix déterminants : Classe, histoire étendue, etc. 
+        et ces choix principaux seront détectés par le code en regardant le CSV.
+        </h3>
+</div>
+<div class="box">
+        <main>
+        <h3>
+        Le code, par la suite, formera l'interface utilisateur de la manière 
+        la plus optimisée. Ce qui permettra deux choses : la première est de rendre le code moins lourd en évitant d'implémenter tous les boutons. 
+        Bien évidemment, je suis en train de travailler sur cette deuxième version, qui devrait aboutir sous peu.
+        </h3>
+    </main>
+</div>
+</section>
+
+<br/>
 
 </body>
 
