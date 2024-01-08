@@ -14,8 +14,8 @@ a {
     color: black;
 }
 
-main {
-    font-family: 'Exo 2', sans-serif;
+body {
+    font-family: 'Exo 2', 'Courier New';
     text-align: center;
 }
 
@@ -32,33 +32,27 @@ section {
     margin-right: auto;
     width: 45%;
     border-radius: 5%;
-    background-color: white;
+    background-color: lightgray;
     padding: auto;
     color : black;
+    opacity: 0.75;
 }
 
 nav ul {
     list-style-type: none;
 }
 
-nav le {
-    font-family: 'Exo 2', sans-serif;
-    float : left;
-    width: 10%;
-    text-align: center;
+nav li{
+    float: left;
+    width: 25%;
 }
 
-nav ce {
-    font-family: 'Exo 2', sans-serif;
-    width: 10%;
-    text-align: center;
+nav le {
+    text-align: left;
 }
 
 nav ri {
-    font-family: 'Exo 2', sans-serif;
-    float : right;
-    width: 10%;
-    text-align: center;
+    text-align: right;
 }
 
 nav ul::after {
@@ -82,6 +76,6 @@ nav a {
     padding: 10px 0px;
 }
 
-nav a:hover{
-    color: grey;
+a:hover{
+    color: lightcoral;
 }
