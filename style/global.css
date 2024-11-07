@@ -1,81 +1,196 @@
-*{
+/* Reset de base */
+* {
     margin: 0;
     padding: 0;
-}
-
-html {
-    background-image:  url(../data/fondBar.svg), url(../data/fond.svg);
-    height: 100%;
-    background-attachment: scroll, fixed;
-    background-size: cover;
-  }
-
-a {
-    color: black;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Exo 2', 'Courier New';
-    text-align: center;
-}
-
-section {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    padding-left: auto;
-    padding-top: auto;
-}
-
-.box {
-    margin-left: auto;
-    margin-right: auto;
-    width: 45%;
-    border-radius: 5%;
-    background-color: lightgray;
-    padding: auto;
-    color : black;
-    opacity: 0.75;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav li{
-    float: left;
-    width: 25%;
-}
-
-nav le {
-    text-align: left;
-}
-
-nav ri {
-    text-align: right;
-}
-
-nav ul::after {
-    content: "";
-    display: table;
-    clear: both;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 nav {
-    width: 100%;
-    margin: 0 0;
-    position: static ;
-    top: 0px;
+    background-color: #18abcc;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
-    display: block;
+nav .logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color:black;
-    border-bottom: 2px solid transparent;
-    padding: 10px 0px;
+    padding: 0.5em;
 }
 
-a:hover{
-    color: lightcoral;
+.section {
+    padding: 3em 1em;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#accueil {
+    background-image: url("") ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#accueil h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#apropos, #projets, #contact {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.project {
+    background-color: #e4e4e4;
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.8em 1.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Version tablette */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    #accueil h2 {
+        font-size: 2em;
+    }
+
+    #accueil p {
+        font-size: 1em;
+    }
+
+    .section {
+        padding: 2em 1em;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 80%;
+        margin-bottom: 1em;
+    }
+}
+
+/* Version téléphone */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .logo {
+        font-size: 1.3em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    #accueil {
+        height: 80vh;
+        padding: 1em;
+    }
+
+    #accueil h2 {
+        font-size: 1.8em;
+    }
+
+    #accueil p {
+        font-size: 0.9em;
+    }
+
+    #accueil .btn {
+        padding: 0.6em 1em;
+        font-size: 0.9em;
+    }
+
+    .section {
+        padding: 1.5em 1em;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    form input, form textarea {
+        font-size: 1em;
+    }
+
+    form button {
+        padding: 0.6em 1em;
+        font-size: 0.9em;
+    }
 }
