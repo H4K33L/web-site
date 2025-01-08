@@ -53,6 +53,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     margin-bottom: 2em;
+    overflow: hidden;
 }
 
 .slider-container {
