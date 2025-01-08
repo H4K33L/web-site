@@ -8,17 +8,19 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #DAE6EF;
     color: #333;
 }
 
 nav {
-    background-color: #18abcc;
-    color: #fff;
     padding: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #DAE6EF;
+    border: 1px, #333, solid ;
+    position: fixed;
+    width: 100%;
 }
 
 nav .logo {
@@ -32,25 +34,27 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     padding: 0.5em;
 }
 
 .section {
     padding: 3em 1em;
-    max-width: 800px;
     margin: auto;
     text-align: center;
 }
 
 #accueil {
-    background-image: url("") ;
+    color: #fff;
+    background-image: url("../data/polygon-scatter-haikei.svg") ;
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2em;
 }
 
 #accueil h2 {
@@ -58,8 +62,9 @@ nav ul li a {
     margin-bottom: 0.5em;
 }
 
-#apropos, #projets, #contact {
+#apropos, #projets, #contact, #competences {
     background-color: #fff;
+    max-width: 800px;
     border-radius: 10px;
     margin-bottom: 2em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -84,6 +89,15 @@ ul {
     padding: 1.5em;
     width: 250px;
     text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.competence {
+    background-color: #18abcc;
+    border-radius: 8px;
+    padding: 3px;
+    text-align: center;
+    color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
