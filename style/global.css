@@ -125,7 +125,6 @@ form button:hover {
 /* Version tablette */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
         gap: 0.5em;
     }
 
@@ -157,6 +156,7 @@ form button:hover {
     nav {
         flex-direction: column;
         text-align: center;
+        position: static;
     }
 
     nav .logo {
@@ -171,6 +171,7 @@ form button:hover {
     #accueil {
         height: 80vh;
         padding: 1em;
+        color: #333;
     }
 
     #accueil h2 {
