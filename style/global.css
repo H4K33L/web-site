@@ -123,13 +123,49 @@ ul {
     justify-content: center;
 }
 
-.project {
-    background-color: #e4e4e4;
+.slider-container-projects {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    height: 155px;
+    overflow: hidden;
+}
+.menu-Project {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    text-align: center;
+    top: 8.5em;
+}
+.menu-Project label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+}
+.menu-Project label:hover,.menu-Project label:focus {
+    background: #1c87c9;
+}
+.slide-projects-input{
+    opacity: 0;
+}
+.slide-projects-text {
+    width: 100%;
+    background-color: #DAE6EF ;
     border-radius: 8px;
-    padding: 1.5em;
-    width: 250px;
-    text-align: left;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 3px;
+    position: absolute;
+    left: 150%;
+    z-index: 10;
+    transition: left 0s 0.30s;
+}
+[id^="slide-projects"]:checked + .slide-projects-text {
+    left: 0;
+    z-index: 300;
+    transition: left 0.65s ease-out;
 }
 
 .competence {
@@ -243,6 +279,13 @@ form button:hover {
 
     .projects {
         align-items: center;
+    }
+    
+    .slider-container-projects {
+        height: 300px;
+    }
+    .menu-Project {
+        top: 17em;
     }
 
     .project {
