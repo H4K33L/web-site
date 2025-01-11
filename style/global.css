@@ -23,8 +23,9 @@ nav {
     width: 100%;
 }
 
-nav .logo {
-    font-size: 1.5em;
+.logo {
+    max-width : 4%; 
+    max-height : 4%;
 }
 
 nav ul {
@@ -204,6 +205,11 @@ form button:hover {
         gap: 0.5em;
     }
 
+    .logo {
+        max-width : 8%; 
+        max-height : 8%;
+    }
+
     #accueil {
         height: 75vh;
     }
@@ -242,12 +248,13 @@ form button:hover {
         position: static;
     }
 
-    .menu {
-        top: 20em;
+    .logo {
+        max-width : 12%; 
+        max-height : 12%;
     }
 
-    nav .logo {
-        font-size: 1.3em;
+    .menu {
+        top: 20em;
     }
 
     nav ul {
