@@ -127,7 +127,7 @@ ul {
     max-width: 800px;
     position: relative;
     margin: auto;
-    height: 155px;
+    height: 200px;
     overflow: hidden;
 }
 .menu-Project {
@@ -136,7 +136,7 @@ ul {
     z-index: 11;
     width: 100%;
     text-align: center;
-    top: 8.5em;
+    top: 10em;
 }
 .menu-Project label {
     cursor: pointer;
@@ -282,10 +282,10 @@ form button:hover {
     }
     
     .slider-container-projects {
-        height: 300px;
+        height: 350px;
     }
     .menu-Project {
-        top: 17em;
+        top: 19em;
     }
 
     .project {
