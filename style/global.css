@@ -199,6 +199,92 @@ form button:hover {
     background-color: #555;
 }
 
+#accueil {
+    text-align: center;
+    padding: 4em 2em;
+    background-color: #f8f9fa;
+    margin-bottom: 2em;
+}
+
+#accueil h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+#accueil p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+#articles {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+#articles h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.article {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+    padding: 1.5em;
+}
+
+.article h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.article h3 a {
+    color: #18abcc;
+    text-decoration: none;
+}
+
+.article h3 a:hover {
+    text-decoration: underline;
+}
+
+.article .date {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.article p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.article .lire-plus {
+    display: inline-block;
+    background-color: #18abcc;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.article .lire-plus:hover {
+    background-color: #1497b5;
+}
+
 /* Version tablette */
 @media (max-width: 768px) {
     nav ul {
@@ -237,6 +323,26 @@ form button:hover {
     .project {
         width: 80%;
         margin-bottom: 1em;
+    }
+    
+    #accueil {
+        padding: 3em 1em;
+    }
+
+    #accueil h2 {
+        font-size: 2em;
+    }
+
+    #accueil p {
+        font-size: 1em;
+    }
+
+    #articles {
+        padding: 1em;
+    }
+
+    .article {
+        padding: 1em;
     }
 }
 
@@ -306,5 +412,21 @@ form button:hover {
     form button {
         padding: 0.6em 1em;
         font-size: 0.9em;
+    }
+    
+    #accueil {
+        padding: 2em 1em;
+    }
+
+    #accueil h2 {
+        font-size: 1.8em;
+    }
+
+    #articles h2 {
+        font-size: 1.6em;
+    }
+
+    .article h3 {
+        font-size: 1.3em;
     }
 }
