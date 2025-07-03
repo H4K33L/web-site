@@ -1,0 +1,72 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlog-stage</title>
+    <link rel="stylesheet" href="style/global.css">
+</head>
+<body>
+    <!-- Menu de navigation -->
+    <nav>
+        <img class="logo" src="data/logo.png"/>
+        <ul>
+            <li><a href="vlog.html">Retour</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <br/>
+        <br/>
+        <br/>
+
+        <section id="articles">
+            <h2>Première participation, constructive, sur le développement du Dolibarr de LTDJ.</h2>
+            <article class="article">
+                <p>
+                    Ma toute première tâche a été d'ajouter la possibilité de rechercher les clients, s'ils sont enregistrés
+                    dans la base de données du magasin, avec un code-barres depuis l'écran de caisse réalisé sur Dolibarr.
+                    Il est à savoir qu'il y avait déjà un champ pour la recherche par nom/prénom des clients, mais le champ
+                    ne prenait pas les codes-barres dans ses paramètres de recherche.
+                </p>
+                <p>
+                    Ce que dans un premier temps j'ai rajouté la possibilité de chercher par code-barres, mais ce n'était 
+                    pas tout, après avoir fini cette première partie, mon maître de stage m'a demandé de faire en sorte qu’une
+                    l'on puisse utiliser une douchette à code-barres dans cette barre de recherche.
+                    Pour information, si vous n'avez jamais utilisé de douchette à code-barres, elle fonctionne comme suit :
+                    elle scanne le code-barres et va traduire les barres en suite de caractères et les rentrer dans le champ
+                    où le curseur est (le petit trait vertical qui clignote et signale où vous tapez) et ensuite appuyer sur la touche 
+                    entrée. le tout très rapidement, le problème c'était que cela ne marchait pas, le code-barres était bien rentré dans 
+                    la barre de recherche mais ne sélectionnait pas directement l'utilisateur qui était proposé. De plus, il fallait
+                    rajouter le fait que quand plusieurs clients étaient retournés, il fallait ignorer la première touche entrée pour éviter que
+                    la douchette sélectionne un que l'on ne veut pas. À savoir que chaque client a son propre code-barres mais qu'un client
+                    peut avoir des alias qui eux possèdent le même code-barres, les alias représentent par exemple le fils d'un client qui utilise
+                    la même carte de fidélité que son père mais ne partagent pas pour autant les mêmes remises.
+                    Le travail à réaliser allait être important. 
+                </p>
+                <p>
+                    Bien heureusement, mon maître de stage m'a indiqué qu'il y avait déjà un code qui permettait d'utiliser la douchette à code-barres,
+                    la page sur laquelle je travaillais, l'écran de caisse de Dolibarr, permet aussi d'utiliser la couchette à code-barres pour chercher
+                    les produits que le client achète, avec toutes les fonctionnalités voulues.
+                    J'ai donc cherché où était ce code et je l'ai réutilisé voire modifié quand cela était nécessaire de sorte à obtenir ce que je voulais.
+                    Ce qui marcha, maintenant l'on peut utiliser une douchette à code-barres pour chercher des clients depuis la caisse.
+                </p>
+                <p>
+                    En plus de ce petit ajout sur la caisse, j'ai aussi fixé certains petits problèmes sur la page dolibarr qui permettent de passer
+                    commande auprès des fournisseurs.
+                    À commencer par l'ajout d'un message d'erreur si l'on essaie de supprimer des commandes d'un produit déjà reçu, modification légère
+                    de l'affichage car certaines informations n'étaient pas disponibles pour l'utilisateur et encore le debugage d'une fonctionnalité importante
+                    celle de pouvoir prendre en compte les stocks virtuels (stock actuel plus le produit commandé mais pas encore en stock) quand on cherche
+                    la faire la liste des produits que l'on doit ajouter au stock pour remplir notre stock au seuil voulu.
+                </p>
+                <p>
+                    Ces premières participations au projet m'ont permis de vraiment prendre en main et de m'habituer à l'environnement de travail,
+                    ce qui allait se montrer important pour la suite...
+                </p>
+            </article>
+            <a href="vlog.html">Retour</a>
+        </section>
+
+    <footer>
+        <p>&copy; 2025 Mon Blog de Stage. Tous droits réservés.</p>
+    </footer>
+</body>
