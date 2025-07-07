@@ -21,14 +21,33 @@
 
         <section id="articles">
             <article class="article">
-                <h2>Retropedalage sur le projet et organisation du travail</h2>
+                <h2>Réalisation d'une fonctionnalité importante dans son intégralité.</h2>
             </article>
             <article class="article">
-                <p>
+                <p> Bien maintenant qu'on a une méthode bien propre pour envoyer les bons cadeaux aux clients et les imprimer proprement
+                    il faut refaire les bons cadeaux, ou plutôt mettre le bon format de bon cadeau fonctionnel sur notre dolibarr. Et il faut
+                    aussi faire en sorte que les utilisateurs puissent choisir le fond de leur bon d'achat, toutes les boutiques ne doivent 
+                    pas utiliser les mêmes (même s'il n'a aucune valeur marchande) il faut donc changer toutes les générations de PDF et 
+                    Rajouter une interface pour que les utilisateurs puissent choisir les fonds de bon d'achats, et ça, c'est moi qui l'ai réalisé.
                 </p>
-                <p>
+                <p> Pour commencer j'ai inséré une page que j'ai moi-même réalisée dans les pages du module "products" de Dolibarr, les bons cadeaux
+                    Étant un produit, la place de l'interface était logiquement là.
                 </p>
-                <p>
+                <p> Bon maintenant que j'ai ma page, qu'est-ce que je dois mettre dedans ? Cette question a été suivie d'une réflexion conjointe
+                    avec les membres du service pour savoir ce qu'ils voulaient comme fonctionnalité sur cette page, et cette réflexion est très
+                    importante dans le travail de développement car elle permet d'anticiper les besoins utilisateurs et par là même d'anticiper
+                    Les demandes d'amélioration future. Au final sur cette page j'ai dû y mettre : de quoi ajouter un fond de bon d'achat (car 
+                    sinon la page n'a pas d'intérêt d'exister); mais aussi un bouton pour récupérer un modèle vierge d'un bon d'achat pour 
+                    que les utilisateurs puissent avoir un modèle lorsqu'ils feront leur fond de bon d'achat; tout un système qui permet d'enregistrer
+                    Plusieurs fonds et d'en choisir un ; ainsi qu'un bouton qui télécharge un exemple du bon rempli comme si quelqu'un l'avait commandé.
+                </p>
+                <p> Bon, une fois notre page remplie avec tous nos boutons, il faut les faire marcher, enfin un seul ne marchait pas à ce moment,
+                    Celui qui fait télécharger un bon rempli comme commande. Rajouter cette fonctionnalité n'a pas été bien dur car j'avais déjà touché
+                    À la génération de bons doud forme de pdf lorqu'on a fait la fonctionnalité de mettre plusieurs bonds sur un PDF lors du pair programing.
+                </p>
+                <p> Travailler sur cet ajout m'a permis de voir tout le processus de réflexion en amont de la réalisation du code, de penser
+                    à l'expérience utilisateur, enfin plutôt au besoin utilisateur car ma page n'est pas spécialement belle, et avoir réalisé cette
+                    Interface et savoir qu'elle va être utilisée me fait très plaisir.
                 </p>
             </article>
         </section>
