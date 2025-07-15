@@ -56,6 +56,7 @@ nav ul li a:hover {
     padding: 3em 1em;
     margin: auto;
     text-align: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0);
 }
 
 .menu {
@@ -163,7 +164,7 @@ form button:hover {
 
 #accueil {
     display: grid;
-    grid-template-columns: 400vh;
+    grid-template-columns: 200vh;
     text-align: center;
     height: 100vh;
     justify-content: center;
@@ -198,7 +199,7 @@ form button:hover {
 .article {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 3px rgba(0, 0, 0);
     margin-bottom: 2em;
     padding: 1.5em;
 }
