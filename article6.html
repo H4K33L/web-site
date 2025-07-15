@@ -25,11 +25,44 @@
                 <h2>Retropedalage sur le projet et organisation du travail</h2>
             </article>
             <article class="article">
-                <p>
+                <p> Vous souvenez-vous de quand je vous ai raconté le travail en pair programming ?
+                    C'était il y a 2 postes de ça, et bien on est un peu allé trop loin dans notre
+                    Travail. Pour travailler sur Dolibarr et l'améliorer et rajouter des versions, on
+                    utilise ce qui s'appelle un gestionnaire de versioning nommé <a href="https://fr.wikipedia.org/wiki/Git"  target="_blank">Git</a>,
+                    Comme Git nous permet de gérer la notion de version et de mise à jour de notre solution Dolibarr, chaque
+                    Problème remonté ou nouvelle fonctionnalité fait l'affaire d'une nouvelle branche de git.
+                    Une branche est une copie du projet principal sur laquelle on peut travailler sans avoir peur d'endommager l'originale.
+                    Donc le fonctionnement du travail sur Dolibarr est le suivant, un bug est remonté, on crée une branche pour le solutionner
+                    Puis, une fois validé par le chef de projet, on remplace la branche principale par celle avec les modifications
+                    (c'est un peu plus complexe que ça).
+                    Le problème que l'on a dans ce cas-ci, c'est que nous avons travaillé sur plusieurs nouvelles fonctionnalités et 
+                    Résolu plusieurs bugs, le tout dans une seule branche.
+                    Ce qui n'est pas du tout pratique pour que le chef de projet valide les modifications de manière indépendante et efficace.
                 </p>
-                <p>
+                <img src="data/article6.png" alt="image représentant une arboréscence git">
+                <br/>
+                <em>Voici une petite représentation graphique d'un repo git pour vous faire une petite idée.</em>
+                <br/>
+                <br/>
+                <p> Le travail de cette semaine a donc été de reprendre toutes les modifications et bugs corrigés et de les réorganiser
+                    Proprement dans leurs propres branches.
                 </p>
-                <p>
+                <p> 
+                    Le nom de la branche sur laquelle on a travaillé avait pour but principal de permettre d'attribuer un bon d'achat 
+                    À un client. Avant, les bons d'achat étaient achetés avec le compte du bénéficiaire (créé pour l'occasion s'il est inexistant).
+                    Ce qui est déjà en soi une nouvelle fonctionnalité importante, par-dessus cela nous avions ajouté : la génération
+                    de PDF de bon d'achat; l'envoi d'email au bénéficiaire ou à l'acheteur du bon d'achat ; l'ouverture d'une nouvelle
+                    page avec ouvert un PDF contenant le ou les bons d'achat, pour pouvoir les imprimer sur place ; une gestion de la décoration
+                    Des bons d'achats (réalisés par moi seul).
+                </p>
+                <p> Toutes ces modifications étant interdépendantes, on a dû les faire une à une, branche par branche. Mais l'on a dû
+                    S'arrêter avant d'avoir tout fini, car le chef de projet était occupé par un événement organisé par l'entreprise.
+                    Et comme chaque modification dépend de la précédente, si la première devait être modifiée cela aurait déclenché un effet
+                    De cascade.
+                </p>
+                <p> Ce que je retiens de cette semaine de travail, c'est qu'il faut toujours bien organiser sa méthode de travail, 
+                    Surtout sur de gros projets, de rendre le tout maintenable dans le temps. Et surtout de ne pas oublier de 
+                    Respecter la méthode de travail.
                 </p>
             </article>
         </section>
