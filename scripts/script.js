@@ -1,5 +1,13 @@
 const slideTimeout = 5000;
 const $slides = document.querySelectorAll('.slide');
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+
+burger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  burger.classList.toggle('open');
+});
+
 let $dots;
 let intervalId;
 let currentSlide = 1;
